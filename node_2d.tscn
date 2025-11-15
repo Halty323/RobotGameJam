@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=4 uid="uid://burqyt5gkahty"]
+[gd_scene load_steps=4 format=4 uid="uid://burqyt5gkahty"]
 
 [ext_resource type="PackedScene" uid="uid://dq1kq03ff774c" path="res://scenes/Player/player.tscn" id="1_epypp"]
+[ext_resource type="PackedScene" uid="uid://bqpxsbjxto1ad" path="res://scenes/Enemy/craftpix-net-434566-free-robot-pixel-art-sprite-sheets/Enemy_00/enemy_00.tscn" id="3_epypp"]
 [ext_resource type="TileSet" uid="uid://d1i1pfo0qsl4l" path="res://scenes/Level_test/bg_world.tres" id="3_q6r6c"]
 
 [node name="Node2D" type="Node2D"]
@@ -14,3 +15,7 @@ tile_map_data = PackedByteArray("AADx//b/kQAGAAAAAADx//f/kQAGAAEAAADx//j/kQAGAAE
 tile_set = ExtResource("3_q6r6c")
 
 [node name="CharacterBody2D" parent="Level" instance=ExtResource("1_epypp")]
+position = Vector2(57, 5)
+
+[node name="Enemy_00" parent="Level" instance=ExtResource("3_epypp")]
+position = Vector2(-220, -148)

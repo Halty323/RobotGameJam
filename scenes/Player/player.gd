@@ -8,9 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var move = move_vector()
-	var direction = move.normalized()
-	velocity = max_speed * direction
+	velocity = max_speed * move_vector().normalized()
 	move_and_slide()
 
 func move_vector():
